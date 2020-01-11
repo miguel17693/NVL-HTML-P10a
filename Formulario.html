@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Formulario de datos </title>
+</head>
+
+<body>
+<form method="post" action="miservidor.php">
+<div>
+	<label for="CP">Código Postal:</label>
+	<input id="CP" type="number">
+</div>
+<div>
+<label for="satisfaccion"> Indica aquí, del 1 al 5, tú satisfacción con nuestro producto: </label>
+	<select id="satisfaccion">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	</select>
+</div>
+<div>
+<label for="email">Escribe aquí tu email:</label>
+<input id="email" type="text">
+</div>
+<div>
+<label for="positivo">Escribe aquí tus comentarios positivos sobre el producto:</label>
+<textarea id="positivo"></textarea>
+</div>
+<div>
+<label for="negativo">Escribe aquí tus comentarios negativos sobre el producto:</label>
+<textarea id="negativo"></textarea>
+</div>
+<div>
+<label for="encuesta"> De estas opciones, cuál crees que definiría mejor a nuestro producto</label>
+<select id="encuesta">
+	<option value="horrible">Horrible</option>
+	<option value="pesimo">Pésimo</option>
+	<option value="noestamal">No está mal!</option>
+	<option value= "bien">Bien</option>
+	<option value="muybien>Muy bien!</option>
+	<option value="eslomejor">Es lo mejor!</option>
+</select>
+</div>
+<input type="submit" value="Enviar">
+</body>
+</html>
+
+
+
+Para ello, necesitamos:
+
+Un control donde pongamos el Código postal
+Nivel de satisfacción con el producto (del 1 al 5)
+Email del usuario que ha consumido el producto
+Puntos positivos del producto (en texto libre)
+Puntos negativos (texto libre)
+En un listado de características que te inventes, que el usuario pueda elegir entre las siguientes opciones: excelente, bueno, regular, pésimo (resuelve este punto de dos maneras)
